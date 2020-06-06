@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+   套件测试
+  用配置文件的方式
+ -->
+<suite name="nestsTest">
+         <test name="login">
+             <classes>
+                <class name="com.demo.testng.nestsTest.TestConfig"/>
+                <class name="com.demo.testng.nestsTest.LoginTest"/>
+              </classes>
+        </test>
+            <test name="pay">
+                <classes>
+                <class name="com.demo.testng.nestsTest.TestConfig"/>
+                <class name="com.demo.testng.nestsTest.PayTest"/>
+            </classes>
+        </test>
+
+</suite>
