@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+   组测试中的类分类测试
+ -->
+<suite name="groups">
+    <groups>
+        <run>
+            <include name="stu"/>
+        </run>
+    </groups>
+         <test name="login">
+             <classes>
+                <class name="com.demo.testng.groups.GroupClass1"/>
+                 <class name="com.demo.testng.groups.GroupClass2"/>
+              </classes>
+        </test>
+</suite>
